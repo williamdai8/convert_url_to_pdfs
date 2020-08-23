@@ -19,7 +19,7 @@ var file_seq = 1;
 (async () => {
     const cluster = await Cluster.launch({
         concurrency: Cluster.CONCURRENCY_CONTEXT,
-        maxConcurrency: 2,
+        maxConcurrency: 4,
 
         puppeteerOptions: {
             headless: true,
